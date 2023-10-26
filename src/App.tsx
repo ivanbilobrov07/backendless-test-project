@@ -15,14 +15,16 @@ const DummyChartPage = React.lazy(
 
 const App: React.FC = () => {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<DummyListPage />} />
-        <Route path="dummyList" element={<DummyListPage />} />
-        <Route path="dummyTable" element={<DummyTablePage />} />
-        <Route path="dummyChart" element={<DummyChartPage />} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<DummyListPage />} />
+          <Route path="dummyList" element={<DummyListPage />} />
+          <Route path="dummyTable" element={<DummyTablePage />} />
+          <Route path="dummyChart" element={<DummyChartPage />} />
+        </Route>
+      </Routes>
+    </>
   );
 };
 
