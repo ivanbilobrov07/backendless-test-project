@@ -1,17 +1,19 @@
-import { FC, lazy } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import { MainLayout } from "./components/MainLayout/MainLayout";
 
-const DummyListPage = lazy(() => import("./pages/DummyListPage/DummyListPage"));
-const DummyTablePage = lazy(
+const DummyListPage = React.lazy(
+  () => import("./pages/DummyListPage/DummyListPage")
+);
+const DummyTablePage = React.lazy(
   () => import("./pages/DummyTablePage/DummyTablePage")
 );
-const DummyChartPage = lazy(
+const DummyChartPage = React.lazy(
   () => import("./pages/DummyChartPage/DummyChartPage")
 );
 
-const App: FC = () => {
+const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>

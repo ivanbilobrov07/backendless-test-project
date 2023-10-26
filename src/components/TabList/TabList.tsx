@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 
 import { Tab } from "../Tab";
 import { StyledList } from "./TabList.styled";
@@ -9,7 +9,7 @@ interface ITabListProps {
   tabsInfo: ITab[];
 }
 
-export const TabList: FC<ITabListProps> = ({ tabsInfo }) => {
+export const TabList: React.FC<ITabListProps> = ({ tabsInfo }) => {
   const sortedTabsInto = tabsInfo.sort((a, b) => a.order - b.order);
 
   return (

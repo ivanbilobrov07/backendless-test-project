@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const DummyChartPage: FC = () => {
+const DummyChartPage: React.FC = () => {
   return (
     <table>
       <tr>

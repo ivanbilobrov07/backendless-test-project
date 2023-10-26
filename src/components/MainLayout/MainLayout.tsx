@@ -1,4 +1,4 @@
-import { FC, Suspense } from "react";
+import React, { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
 import { TabList } from "../TabList";
@@ -27,7 +27,7 @@ const tabsData: ITab[] = [
   },
 ];
 
-export const MainLayout: FC = () => {
+export const MainLayout: React.FC = () => {
   return (
     <>
       <StyledHeader>

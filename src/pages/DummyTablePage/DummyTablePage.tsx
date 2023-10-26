@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const DummyTablePage: FC = () => {
+const DummyTablePage: React.FC = () => {
   return (
     <table>
       <tr>

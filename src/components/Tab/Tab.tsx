@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 
 import { StyledNavLink } from "./Tab.styled";
 
@@ -8,6 +8,6 @@ interface ITabProps {
   tab: ITab;
 }
 
-export const Tab: FC<ITabProps> = ({ tab }) => {
+export const Tab: React.FC<ITabProps> = ({ tab }) => {
   return <StyledNavLink to={tab.id}>{tab.title}</StyledNavLink>;
 };
