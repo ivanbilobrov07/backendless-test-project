@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/backendless-test-project",
+  base: "./backendless-test-project",
   plugins: [react()],
 });
