@@ -5,7 +5,7 @@ const DummyListPage: React.FC = () => {
     <table>
       <tr>
         <td>Dummy</td>
-        <td>List</td>
+        <td>Listt</td>
       </tr>
     </table>
   );
